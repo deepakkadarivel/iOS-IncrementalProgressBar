@@ -8,7 +8,37 @@
 
 import UIKit
 
+@IBDesignable
 class ProgressView: UIView {
+    
+    @IBInspectable var dashColor: UIColor = UIColor.blackColor() {
+        didSet {
+            dashedLayer.strokeColor = strokeColor.CGColor
+        }
+    }
+    @IBInspectable var strokeColor: UIColor = UIColor.blackColor() {
+        didSet {
+            progressLayer.strokeColor = strokeColor.CGColor
+        }
+    }
+    @IBInspectable var progressLabelColor: UIColor = UIColor.whiteColor() {
+        didSet {
+            progressLabel.textColor = progressLabelColor
+        }
+    }
+    @IBInspectable var sizeProgressLabelColor: UIColor = UIColor.blackColor() {
+        didSet {
+            sizeProgressLabel.textColor = sizeProgressLabelColor
+        }
+    }
+    
+    @IBInspectable var progressViewStrokeWidth: CGFloat = 4.0 {
+        didSet {
+            progressLayer.lineWidth = progressViewStrokeWidth
+        }
+    }
+    
+    @IBInspectable var circleRadius: CGFloat = 200
     
     private let progressLayer: CAShapeLayer = CAShapeLayer()
     private var progressLabel: UILabel = UILabel()
@@ -27,13 +57,16 @@ class ProgressView: UIView {
     
     private func setupView() {
         backgroundColor = UIColor.clearColor()
-        createProgressLayer()
         createLabel()
+    }
+    
+    override func drawRect(rect: CGRect) {
+        createProgressLayer()
     }
 
     func createLabel() {
         progressLabel = UILabel()
-        progressLabel.textColor = UIColor.whiteColor()
+        progressLabel.textColor = progressLabelColor
         progressLabel.font = UIFont(name: "Helveticaneue-UltraLight", size: 40.0)
         progressLabel.text = "0 %"
         progressLabel.textAlignment = .Center
@@ -43,7 +76,7 @@ class ProgressView: UIView {
         addConstraint(NSLayoutConstraint(item: self, attribute: .CenterY, relatedBy: .Equal, toItem: progressLabel, attribute: .CenterY, multiplier: 1.0, constant: 0.0))
         
         sizeProgressLabel = UILabel()
-        sizeProgressLabel.textColor = UIColor.whiteColor()
+        sizeProgressLabel.textColor = sizeProgressLabelColor
         sizeProgressLabel.textAlignment = .Center
         sizeProgressLabel.text = "0.0MB / 0.0MB"
         sizeProgressLabel.font = UIFont(name: "HelveticaNeue-UltraLight", size: 10.0)
@@ -58,17 +91,17 @@ class ProgressView: UIView {
         let endAngle = CGFloat(M_PI * 2 + M_PI_2)
         let centerPoint = CGPointMake(CGRectGetWidth(frame)/2, CGRectGetHeight(frame)/2)
         
-        progressLayer.path = UIBezierPath(arcCenter: centerPoint, radius: CGRectGetWidth(frame)/2 - 10.0, startAngle: startAngle, endAngle: endAngle, clockwise: true).CGPath
+        progressLayer.path = UIBezierPath(arcCenter: centerPoint, radius: circleRadius/*CGRectGetWidth(frame)/2 - 10.0*/, startAngle: startAngle, endAngle: endAngle, clockwise: true).CGPath
         progressLayer.backgroundColor = UIColor.clearColor().CGColor
-        progressLayer.strokeColor = UIColor.whiteColor().CGColor
+        progressLayer.strokeColor = strokeColor.CGColor
         progressLayer.fillColor = nil
         progressLayer.strokeStart = 0.0
         progressLayer.strokeEnd = 0.0
-        progressLayer.lineWidth = 4.0
+        progressLayer.lineWidth = progressViewStrokeWidth
         layer.addSublayer(progressLayer)
         
         let dashedLayer = CAShapeLayer()
-        dashedLayer.strokeColor = UIColor(white: 1.0, alpha: 0.5).CGColor
+        dashedLayer.strokeColor = dashColor.CGColor
         dashedLayer.fillColor = nil
         dashedLayer.lineWidth = 2.0
         dashedLayer.lineJoin = "round"
