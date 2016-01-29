@@ -18,19 +18,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSu-0V-glZ" customClass="DownloadButton" customModule="IncrementalProgressBar" customModuleProvider="target">
-                                <rect key="frame" x="20" y="530" width="280" height="30"/>
+                                <rect key="frame" x="20" y="518" width="280" height="30"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="Start Download"/>
+                                <connections>
+                                    <action selector="downloadButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f0n-Nr-X9i"/>
+                                </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5UI-4N-qgP" customClass="ProgressView" customModule="IncrementalProgressBar" customModuleProvider="target">
+                                <rect key="frame" x="35" y="159" width="250" height="250"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="3UI-za-VmM"/>
+                                    <constraint firstAttribute="width" constant="250" id="oQl-Us-kn9"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1t-kv-4E0">
+                                <rect key="frame" x="111.5" y="87.5" width="97" height="21.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dSu-0V-glZ" secondAttribute="bottom" constant="8" id="659-qJ-h2h"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dSu-0V-glZ" secondAttribute="bottom" constant="20" id="659-qJ-h2h"/>
+                            <constraint firstItem="5UI-4N-qgP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6jX-f7-Cmm"/>
                             <constraint firstItem="dSu-0V-glZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="O1N-0h-2n7"/>
                             <constraint firstAttribute="trailing" secondItem="dSu-0V-glZ" secondAttribute="trailing" constant="20" id="aV3-vG-d58"/>
+                            <constraint firstItem="N1t-kv-4E0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d3x-ov-u4r"/>
+                            <constraint firstItem="5UI-4N-qgP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fWn-6V-kP4"/>
+                            <constraint firstItem="5UI-4N-qgP" firstAttribute="top" secondItem="N1t-kv-4E0" secondAttribute="bottom" constant="50" id="t5G-FT-kJd"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="downloadButton" destination="dSu-0V-glZ" id="j49-zm-Vt4"/>
+                        <outlet property="progressView" destination="5UI-4N-qgP" id="8UG-u0-qIu"/>
+                        <outlet property="statusLabel" destination="N1t-kv-4E0" id="QPb-1f-XtC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
