@@ -1,0 +1,291 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00B6F7341C5B7473009B9349 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B6F7331C5B7473009B9349 /* AppDelegate.swift */; };
+		00B6F7361C5B7473009B9349 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B6F7351C5B7473009B9349 /* ViewController.swift */; };
+		00B6F7391C5B7473009B9349 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00B6F7371C5B7473009B9349 /* Main.storyboard */; };
+		00B6F73B1C5B7473009B9349 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00B6F73A1C5B7473009B9349 /* Assets.xcassets */; };
+		00B6F73E1C5B7473009B9349 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00B6F73C1C5B7473009B9349 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00B6F7301C5B7473009B9349 /* IncrementalProgressBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IncrementalProgressBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00B6F7331C5B7473009B9349 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		00B6F7351C5B7473009B9349 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		00B6F7381C5B7473009B9349 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00B6F73A1C5B7473009B9349 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00B6F73D1C5B7473009B9349 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00B6F73F1C5B7473009B9349 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00B6F72D1C5B7473009B9349 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00B6F7271C5B7473009B9349 = {
+			isa = PBXGroup;
+			children = (
+				00B6F7321C5B7473009B9349 /* IncrementalProgressBar */,
+				00B6F7311C5B7473009B9349 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		00B6F7311C5B7473009B9349 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00B6F7301C5B7473009B9349 /* IncrementalProgressBar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00B6F7321C5B7473009B9349 /* IncrementalProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				00B6F7331C5B7473009B9349 /* AppDelegate.swift */,
+				00B6F7351C5B7473009B9349 /* ViewController.swift */,
+				00B6F7371C5B7473009B9349 /* Main.storyboard */,
+				00B6F73A1C5B7473009B9349 /* Assets.xcassets */,
+				00B6F73C1C5B7473009B9349 /* LaunchScreen.storyboard */,
+				00B6F73F1C5B7473009B9349 /* Info.plist */,
+			);
+			path = IncrementalProgressBar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00B6F72F1C5B7473009B9349 /* IncrementalProgressBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00B6F7421C5B7473009B9349 /* Build configuration list for PBXNativeTarget "IncrementalProgressBar" */;
+			buildPhases = (
+				00B6F72C1C5B7473009B9349 /* Sources */,
+				00B6F72D1C5B7473009B9349 /* Frameworks */,
+				00B6F72E1C5B7473009B9349 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IncrementalProgressBar;
+			productName = IncrementalProgressBar;
+			productReference = 00B6F7301C5B7473009B9349 /* IncrementalProgressBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00B6F7281C5B7473009B9349 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = upbeatios;
+				TargetAttributes = {
+					00B6F72F1C5B7473009B9349 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 00B6F72B1C5B7473009B9349 /* Build configuration list for PBXProject "IncrementalProgressBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00B6F7271C5B7473009B9349;
+			productRefGroup = 00B6F7311C5B7473009B9349 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00B6F72F1C5B7473009B9349 /* IncrementalProgressBar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00B6F72E1C5B7473009B9349 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00B6F73E1C5B7473009B9349 /* LaunchScreen.storyboard in Resources */,
+				00B6F73B1C5B7473009B9349 /* Assets.xcassets in Resources */,
+				00B6F7391C5B7473009B9349 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00B6F72C1C5B7473009B9349 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00B6F7361C5B7473009B9349 /* ViewController.swift in Sources */,
+				00B6F7341C5B7473009B9349 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		00B6F7371C5B7473009B9349 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00B6F7381C5B7473009B9349 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		00B6F73C1C5B7473009B9349 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00B6F73D1C5B7473009B9349 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00B6F7401C5B7473009B9349 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		00B6F7411C5B7473009B9349 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00B6F7431C5B7473009B9349 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = IncrementalProgressBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.upbeatios.me.IncrementalProgressBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		00B6F7441C5B7473009B9349 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = IncrementalProgressBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.upbeatios.me.IncrementalProgressBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00B6F72B1C5B7473009B9349 /* Build configuration list for PBXProject "IncrementalProgressBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00B6F7401C5B7473009B9349 /* Debug */,
+				00B6F7411C5B7473009B9349 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00B6F7421C5B7473009B9349 /* Build configuration list for PBXNativeTarget "IncrementalProgressBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00B6F7431C5B7473009B9349 /* Debug */,
+				00B6F7441C5B7473009B9349 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00B6F7281C5B7473009B9349 /* Project object */;
+}
